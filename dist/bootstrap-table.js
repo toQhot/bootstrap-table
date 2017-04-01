@@ -2831,7 +2831,7 @@
 
     BootstrapTable.prototype.toggleAllColumns = function (visible) {
         $.each(this.columns, function (i, column) {
-            this.columns[i].visible = visible;
+            column.visible = visible;
         });
 
         this.initHeader();
